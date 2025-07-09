@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Breadcrumbs from "@/components/breadcrumbs"
@@ -2400,22 +2400,47 @@ const relatedProducts = [
   },
 ]
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: Promise<{ id: string }>
+}
+
+export default function ProductDetailPage({ params }: PageProps) {
   const { addToCart } = useCart()
-  
-  // Get the product based on the ID from URL
-  const productId = parseInt(params.id)
-  const product = allProducts[productId as keyof typeof allProducts]
-  
-  // If product not found, show default (Summit Pro)
-  const currentProduct = product || allProducts[1]
-  
+  const [productId, setProductId] = useState<number | null>(null)
   const [selectedColorIndex, setSelectedColorIndex] = useState(0)
   const [selectedSize, setSelectedSize] = useState("")
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isFavorite, setIsFavorite] = useState(false)
   const [showSizeGuide, setShowSizeGuide] = useState(false)
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
+  
+  // Handle async params
+  useEffect(() => {
+    params.then(resolvedParams => {
+      setProductId(parseInt(resolvedParams.id))
+    })
+  }, [params])
+  
+  // Get the product based on the ID from URL
+  const product = productId ? allProducts[productId as keyof typeof allProducts] : null
+  
+  // If product not found, show default (Summit Pro)
+  const currentProduct = product || allProducts[1]
+  
+  // Show loading state while params are resolving
+  if (productId === null) {
+    return (
+      <>
+        <Header currentSection="products" />
+        <main className="pt-16">
+          <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="text-center">Loading...</div>
+          </div>
+        </main>
+        <Footer />
+      </>
+    )
+  }
 
   const handleAddToBag = () => {
     if (!selectedSize) {
@@ -2669,7 +2694,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                       <p>Style: {currentProduct.details.style}</p>
                       <p>Color Shown: {currentProduct.details.colorShown}</p>
                       <p>Material: {currentProduct.details.material}</p>
-                      <p>Sole: {currentProduct.details.sole}</p>
+                      {"sole" in currentProduct.details && <p>Sole: {currentProduct.details.sole}</p>}
                     </div>
                   )}
                 </div>

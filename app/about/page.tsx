@@ -88,7 +88,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">We Build Gear That Works</h1>
-            <p className="text-xl md:text-2xl mb-8 font-light">Started by three athletes who got tired of gear that didn't live up to the hype</p>
+            <p className="text-xl md:text-2xl mb-8 font-light">Started by three athletes who got tired of gear that didn&apos;t live up to the hype</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-white text-black hover:bg-gray-100 px-8 py-3">
                 <Link href="/products">Shop Our Gear</Link>
@@ -216,7 +216,7 @@ export default function AboutPage() {
             <div className="max-w-7xl mx-auto px-4 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                  What's Inside
+                  What&apos;s Inside
                 </h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                   Four technologies we actually developed (not licensed)
@@ -296,7 +296,7 @@ export default function AboutPage() {
                   variant="outline"
                   className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 text-lg rounded-xl"
                 >
-                  <Link href="/new">See What's New</Link>
+                  <Link href="/new">See What&apos;s New</Link>
                 </Button>
               </div>
             </div>
