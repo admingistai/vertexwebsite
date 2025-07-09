@@ -1,8 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import CategoryHero from "@/components/category-hero"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -108,10 +108,11 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="order-2 lg:order-1">
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '4/3' }}>
-                    <img 
+                    <Image 
                       src="/images/stories/mount-rainier.jpg" 
                       alt="Mount Rainier, 2018" 
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6">
@@ -128,7 +129,7 @@ export default function AboutPage() {
                     </h2>
                     <div className="space-y-6">
                       <p className="text-lg text-gray-700 leading-relaxed">
-                        In 2018, Marcus was 30 miles into the Wonderland Trail when his shoes fell apart. Elena's "waterproof" jacket was soaked through. James was nursing blisters from his brand-new trail runners.
+                        In 2018, Marcus was 30 miles into the Wonderland Trail when his shoes fell apart. Elena&apos;s &quot;waterproof&quot; jacket was soaked through. James was nursing blisters from his brand-new trail runners.
                       </p>
                       <p className="text-lg text-gray-700 leading-relaxed">
                         We were three outdoor obsessives with day jobs—product design, environmental science, and materials engineering. That night in our soggy tent, we made a pact: build gear that actually works.
@@ -150,7 +151,7 @@ export default function AboutPage() {
                 Our Mission is Simple
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                Whether you're running your first 5K or your tenth ultra, you deserve gear that won't let you down. We test everything ourselves because we use it ourselves.
+                Whether you&apos;re running your first 5K or your tenth ultra, you deserve gear that won&apos;t let you down. We test everything ourselves because we use it ourselves.
               </p>
             </div>
           </section>
@@ -280,7 +281,7 @@ export default function AboutPage() {
                 Ready to Test Our Gear?
               </h2>
               <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-                We're always looking for feedback from people who actually use their gear. Whether you're testing prototypes or just want to share what works (and what doesn't), we'd love to hear from you.
+                We&apos;re always looking for feedback from people who actually use their gear. Whether you&apos;re testing prototypes or just want to share what works (and what doesn&apos;t), we&apos;d love to hear from you.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

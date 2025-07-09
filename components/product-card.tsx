@@ -27,18 +27,15 @@ interface ProductCardProps {
 export default function ProductCard({ product, showQuickView = true }: ProductCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isFavorite, setIsFavorite] = useState(false)
-  const [isHovered, setIsHovered] = useState(false)
   const { addToCart } = useCart()
 
   const handleMouseEnter = () => {
-    setIsHovered(true)
     if (product.images.length > 1) {
       setCurrentImageIndex(1)
     }
   }
 
   const handleMouseLeave = () => {
-    setIsHovered(false)
     setCurrentImageIndex(0)
   }
 
