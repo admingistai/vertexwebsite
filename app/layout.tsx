@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { CartProvider } from "@/components/cart-context";
-import ChatWidgetContainer from "./components/chat-widget-container";
 import CartMessageHandler from "@/components/cart-message-handler";
 import "./globals.css";
 
@@ -22,9 +21,6 @@ export default function RootLayout({
           {children}
           <CartMessageHandler />
         </CartProvider>
-        
-        {/* Chat Widget Container */}
-        <ChatWidgetContainer />
         
         {/* Chat Widget Script - Built Version with ProductCarousel */}
         <Script 
