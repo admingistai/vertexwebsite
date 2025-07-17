@@ -1,0 +1,30 @@
+
+> store_website@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.2.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.11.5.10:3000
+
+ ✓ Starting...
+ ✓ Ready in 880ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1520ms
+ GET / 200 in 1844ms
+ ✓ Compiled /product/[id] in 354ms
+ GET /product/301 200 in 869ms
+ GET /product/301 200 in 44ms
+ ✓ Compiled /kids in 300ms
+ GET /kids 200 in 322ms
+ ✓ Compiled /women in 306ms
+ GET /women 200 in 333ms
+ GET /product/301 200 in 27ms
+ ✓ Compiled /men in 322ms
+ GET /men 200 in 343ms
+ GET /product/301 200 in 22ms
+ GET /men 200 in 25ms
+ GET /kids 200 in 40ms
+ GET /product/301 200 in 23ms
+ ✓ Compiled in 118ms
+ GET /kids 200 in 238ms
+ GET /product/4001 200 in 69ms

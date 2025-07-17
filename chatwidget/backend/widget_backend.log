@@ -2239,3 +2239,107 @@
 2025-07-17 10:01:33,893 - __main__ - INFO - [main.py:65] - [df249059] POST /api/listen - Status: 200 - Time: 1.172s
 2025-07-17 10:01:34,029 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
 2025-07-17 10:01:34,029 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 11:24:35,994 - __main__ - INFO - [main.py:55] - [c68ee834] OPTIONS /api/listen - Request started
+2025-07-17 11:24:35,995 - __main__ - INFO - [main.py:65] - [c68ee834] OPTIONS /api/listen - Status: 200 - Time: 0.000s
+2025-07-17 11:24:35,996 - __main__ - INFO - [main.py:55] - [73d6743a] POST /api/listen - Request started
+2025-07-17 11:24:35,996 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 11:24:35,996 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 11:24:37,331 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 11:24:37,336 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 1.339s, Tokens used: 277, Summary length: 393 chars
+2025-07-17 11:24:37,336 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 11:24:37,336 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 1.339s
+2025-07-17 11:24:37,336 - __main__ - INFO - [main.py:65] - [73d6743a] POST /api/listen - Status: 200 - Time: 1.340s
+2025-07-17 11:24:37,510 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 11:24:37,512 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 11:25:35,463 - __main__ - INFO - [main.py:55] - [58b207ac] POST /api/listen - Request started
+2025-07-17 11:25:35,463 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 11:25:35,463 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 11:25:36,388 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 11:25:36,388 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 0.925s, Tokens used: 279, Summary length: 385 chars
+2025-07-17 11:25:36,388 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 11:25:36,388 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 0.925s
+2025-07-17 11:25:36,388 - __main__ - INFO - [main.py:65] - [58b207ac] POST /api/listen - Status: 200 - Time: 0.926s
+2025-07-17 11:25:36,486 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 11:25:36,486 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 11:29:38,320 - __main__ - INFO - [main.py:55] - [df587a49] POST /api/listen - Request started
+2025-07-17 11:29:38,321 - __main__ - INFO - [main.py:506] - Listen request - Content length: 1998 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 11:29:38,321 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 11:29:38,984 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 11:29:38,986 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 0.665s, Tokens used: 543, Summary length: 230 chars
+2025-07-17 11:29:38,986 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 11:29:38,986 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 0.665s
+2025-07-17 11:29:38,986 - __main__ - INFO - [main.py:65] - [df587a49] POST /api/listen - Status: 200 - Time: 0.666s
+2025-07-17 11:29:39,074 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 11:29:39,075 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 13:01:27,554 - __main__ - INFO - [main.py:55] - [d898b1d2] OPTIONS /api/listen - Request started
+2025-07-17 13:01:27,555 - __main__ - INFO - [main.py:65] - [d898b1d2] OPTIONS /api/listen - Status: 200 - Time: 0.001s
+2025-07-17 13:01:27,556 - __main__ - INFO - [main.py:55] - [b7952b47] POST /api/listen - Request started
+2025-07-17 13:01:27,556 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 13:01:27,556 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 13:01:28,560 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 13:01:28,564 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 1.008s, Tokens used: 242, Summary length: 189 chars
+2025-07-17 13:01:28,564 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 13:01:28,564 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 1.008s
+2025-07-17 13:01:28,564 - __main__ - INFO - [main.py:65] - [b7952b47] POST /api/listen - Status: 200 - Time: 1.009s
+2025-07-17 13:01:28,770 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 13:01:28,771 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 13:07:01,284 - __main__ - INFO - [main.py:55] - [354b1ca8] POST /api/listen - Request started
+2025-07-17 13:07:01,286 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 13:07:01,286 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 13:07:02,643 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 13:07:02,644 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 1.357s, Tokens used: 261, Summary length: 266 chars
+2025-07-17 13:07:02,644 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 13:07:02,644 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 1.358s
+2025-07-17 13:07:02,644 - __main__ - INFO - [main.py:65] - [354b1ca8] POST /api/listen - Status: 200 - Time: 1.360s
+2025-07-17 13:07:02,746 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 13:07:02,746 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 13:41:22,179 - __main__ - INFO - [main.py:55] - [9e819701] OPTIONS /api/listen - Request started
+2025-07-17 13:41:22,179 - __main__ - INFO - [main.py:65] - [9e819701] OPTIONS /api/listen - Status: 200 - Time: 0.000s
+2025-07-17 13:41:22,182 - __main__ - INFO - [main.py:55] - [352abdbf] POST /api/listen - Request started
+2025-07-17 13:41:22,182 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 13:41:22,182 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 13:41:26,841 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 13:41:26,844 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 4.661s, Tokens used: 276, Summary length: 370 chars
+2025-07-17 13:41:26,844 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 13:41:26,844 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 4.661s
+2025-07-17 13:41:26,844 - __main__ - INFO - [main.py:65] - [352abdbf] POST /api/listen - Status: 200 - Time: 4.662s
+2025-07-17 13:41:26,992 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 13:41:26,993 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 13:44:31,513 - __main__ - INFO - [main.py:55] - [c2a34b98] POST /api/listen - Request started
+2025-07-17 13:44:31,513 - __main__ - INFO - [main.py:506] - Listen request - Content length: 2003 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 13:44:31,514 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 13:44:32,605 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 13:44:32,606 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 1.092s, Tokens used: 772, Summary length: 157 chars
+2025-07-17 13:44:32,606 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 13:44:32,606 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 1.092s
+2025-07-17 13:44:32,606 - __main__ - INFO - [main.py:65] - [c2a34b98] POST /api/listen - Status: 200 - Time: 1.093s
+2025-07-17 13:44:32,721 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 13:44:32,722 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 14:01:18,390 - __main__ - INFO - [main.py:55] - [0ba46bf0] OPTIONS /api/listen - Request started
+2025-07-17 14:01:18,391 - __main__ - INFO - [main.py:65] - [0ba46bf0] OPTIONS /api/listen - Status: 200 - Time: 0.001s
+2025-07-17 14:01:18,392 - __main__ - INFO - [main.py:55] - [654a9b7b] POST /api/listen - Request started
+2025-07-17 14:01:18,393 - __main__ - INFO - [main.py:506] - Listen request - Content length: 1999 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 14:01:18,393 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 14:01:22,179 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 14:01:22,179 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 3.786s, Tokens used: 591, Summary length: 384 chars
+2025-07-17 14:01:22,179 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 14:01:22,179 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 3.786s
+2025-07-17 14:01:22,180 - __main__ - INFO - [main.py:65] - [654a9b7b] POST /api/listen - Status: 200 - Time: 3.787s
+2025-07-17 14:01:22,374 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 14:01:22,375 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+2025-07-17 14:01:54,061 - __main__ - INFO - [main.py:55] - [8c9685cb] GET / - Request started
+2025-07-17 14:01:54,062 - __main__ - INFO - [main.py:65] - [8c9685cb] GET / - Status: 404 - Time: 0.000s
+2025-07-17 14:01:54,160 - __main__ - INFO - [main.py:55] - [8f328aa8] GET /favicon.ico - Request started
+2025-07-17 14:01:54,161 - __main__ - INFO - [main.py:65] - [8f328aa8] GET /favicon.ico - Status: 404 - Time: 0.001s
+2025-07-17 14:18:25,594 - __main__ - INFO - [main.py:55] - [186f5ca0] OPTIONS /api/listen - Request started
+2025-07-17 14:18:25,595 - __main__ - INFO - [main.py:65] - [186f5ca0] OPTIONS /api/listen - Status: 200 - Time: 0.001s
+2025-07-17 14:18:25,595 - __main__ - INFO - [main.py:55] - [f00f1065] POST /api/listen - Request started
+2025-07-17 14:18:25,596 - __main__ - INFO - [main.py:506] - Listen request - Content length: 544 chars, Voice: JBFqnCBsd6RMkjVDRZzb, Model: eleven_multilingual_v2
+2025-07-17 14:18:25,596 - __main__ - INFO - [main.py:544] - Generating summary for TTS - OpenAI model: gpt-3.5-turbo
+2025-07-17 14:18:26,956 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-17 14:18:26,959 - __main__ - INFO - [main.py:560] - Summary generated - Processing time: 1.363s, Tokens used: 242, Summary length: 197 chars
+2025-07-17 14:18:26,959 - __main__ - INFO - [main.py:565] - Converting summary to audio - ElevenLabs voice: JBFqnCBsd6RMkjVDRZzb
+2025-07-17 14:18:26,959 - __main__ - INFO - [main.py:586] - Listen request successful - Total processing time: 1.363s
+2025-07-17 14:18:26,959 - __main__ - INFO - [main.py:65] - [f00f1065] POST /api/listen - Status: 200 - Time: 1.364s
+2025-07-17 14:18:27,109 - httpx - INFO - [_client.py:1026] - HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb/stream?output_format=mp3_44100_128 "HTTP/1.1 401 Unauthorized"
+2025-07-17 14:18:27,109 - __main__ - ERROR - [main.py:582] - Error during audio streaming: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}

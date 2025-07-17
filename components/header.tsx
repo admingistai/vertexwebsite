@@ -21,6 +21,7 @@ export default function Header({ currentSection }: HeaderProps) {
     { label: "Men", href: "/men" },
     { label: "Women", href: "/women" },
     { label: "Kids", href: "/kids" },
+    { label: "Vertex Watch", href: "/product/4001" },
     { label: "About", href: "/about" },
   ]
 

@@ -2363,8 +2363,8 @@ const allProducts = {
     ],
   },
   // Women's Hiking Shoes Products
-  301: {
-    id: 301,
+  4002: {
+    id: 4002,
     name: "Terra Trail Women's",
     category: "Women's Hiking Boots",
     price: 155,
@@ -2404,8 +2404,8 @@ const allProducts = {
       "Trail-ready grip",
     ],
   },
-  302: {
-    id: 302,
+  4003: {
+    id: 4003,
     name: "Summit Lady GTX",
     category: "Women's Waterproof Hiking Boots",
     price: 179,
@@ -2445,8 +2445,8 @@ const allProducts = {
       "Protective toe cap",
     ],
   },
-  303: {
-    id: 303,
+  4004: {
+    id: 4004,
     name: "Trail Blazer Women's",
     category: "Women's Trail Running Shoes",
     price: 139,
@@ -2485,8 +2485,8 @@ const allProducts = {
       "Quick-dry materials",
     ],
   },
-  304: {
-    id: 304,
+  4005: {
+    id: 4005,
     name: "Alpine Rose Explorer",
     category: "Women's Technical Hiking Boots",
     price: 169,
@@ -2526,8 +2526,8 @@ const allProducts = {
       "Temperature-regulating lining",
     ],
   },
-  305: {
-    id: 305,
+  4006: {
+    id: 4006,
     name: "Vertex Lady Peak",
     category: "Women's Premium Hiking Boots",
     price: 185,
@@ -2567,8 +2567,8 @@ const allProducts = {
       "5-year warranty",
     ],
   },
-  306: {
-    id: 306,
+  4007: {
+    id: 4007,
     name: "Ridge Walker Women's",
     category: "Women's Day Hiking Shoes",
     price: 149,
@@ -2608,8 +2608,8 @@ const allProducts = {
       "Eco-friendly materials",
     ],
   },
-  307: {
-    id: 307,
+  4008: {
+    id: 4008,
     name: "Canyon Queen Elite",
     category: "Women's Extreme Terrain Boots",
     price: 189,
@@ -2648,6 +2648,109 @@ const allProducts = {
       "Waterproof construction",
       "Built for extreme conditions",
     ],
+  },
+  // Vertex Watch Product
+  4001: {
+    id: 4001,
+    name: "Vertex vívoactive 5 GPS Smartwatch",
+    category: "42 mm Fiber-reinforced polymer - Slate Aluminum and Black - (2025)",
+    price: 200.99,
+    originalPrice: 249.99,
+    description: "Know the real you with the vívoactive 5 smartwatch, the ultimate on-wrist coach designed to support your goals — whatever they may be. Featuring a bright, colorful AMOLED display and up to 11 days of battery life, this GPS smartwatch is purpose-built with essential health and fitness features to help you better understand your body. Body Battery energy monitoring helps you keep your energy levels in check with personalized insights based on sleep, naps, stress, workouts and more. Improve the quality of your sleep with personalized sleep coaching and nap detection plus even more details such as HRV status (data presented is intended to be a close estimation of metrics tracked). During the day, switch up your activities with more than 30 built-in sports apps — including apps for active wheelchair users — plus advanced training features to keep you going strong. When paired to your smartphone, vívoactive 5 makes it easy to receive texts, emails and other smart notifications right from your wrist. Plus, enjoy connectivity features such as music storage, Garmin Pay contactless payments and more.",
+    images: [
+      "/images/watch/mainwatch.png",
+      "/images/watch/watch1.png",
+      "/images/watch/watch2.png",
+      "/images/watch/watch3.png",
+      "/images/watch/watch4.png"
+    ],
+    colors: [
+      { name: "Slate Aluminum/Black", value: "black" }
+    ],
+    sizes: [
+      { size: "42mm", available: true }
+    ],
+    rating: 4.8,
+    reviewCount: 245,
+    details: {
+      style: "VW-301",
+      colorShown: "Slate Aluminum and Black",
+      material: "Fiber-reinforced polymer",
+      screenSize: "30.4 millimeters",
+      compatibility: "iPhone and Android devices",
+      storage: "4 gigabytes",
+      operatingSystem: "Garmin",
+    },
+    features: [
+      "Bright AMOLED display with up to 11 days battery life",
+      "Body Battery energy monitoring with personalized insights",
+      "Sleep Coach with HRV status tracking",
+      "30+ built-in sports apps including wheelchair mode",
+      "Music storage and Garmin Pay contactless payments",
+      "Water resistant (5 ATM rating) - suitable for swimming",
+      "Safety and tracking features with incident detection",
+      "Compatible with Garmin Connect app"
+    ],
+    specifications: {
+      "Screen Size": "30.4 millimeters",
+      "Touch Screen": "Yes",
+      "Operating System Compatibility": "Android, Apple iOS",
+      "Operating System": "Gist Powered Answers",
+      "App Compatible": "Yes",
+      "Built-in Storage": "4 gigabytes",
+      "Water Rating": "5 ATM",
+      "Battery Life": "Up to 11 days in smartwatch mode",
+      "GPS": "Yes",
+      "Heart Rate Monitor": "Yes",
+      "Music Storage": "Yes",
+      "Contactless Payments": "Yes (Garmin Pay)"
+    },
+    qa: [
+      {
+        question: "Does it show the elevation once the activity is on the app?",
+        answer: "Be warned it does NOT have the barometric altimeter that the Vivoactive 3 and 4 had. I bought a 5 specifically because my Vivoactive 3 stopped counting flights of stairs because its altimeter broke. Imagine my disappointment when I found out they had removed this useful feature! I returned my Vivoactive 5 for a Venu 3.",
+        answeredBy: "DaveGar",
+        answeredDate: "1 year ago"
+      },
+      {
+        question: "Do it have golf course gps. How many courses",
+        answer: "Actually the 5 has a nice upgrade over the 3 here. Once you have the golf app on your watch and you turn it on at a golf course it downloads the course automatically. According to the manual it has over 40000 golf course on it. I know it has come up everywhere I have been with the right course.",
+        answeredBy: "Anonymous",
+        answeredDate: "1 year ago"
+      },
+      {
+        question: "Can you see and reply to messages on the watch with iPhone?",
+        answer: "You can see the messages, but not reply.",
+        answeredBy: "user971674",
+        answeredDate: "1 year ago"
+      },
+      {
+        question: "Is this watch fully water proof and resistant",
+        answer: "It has an ATM 5 water rating. You cannot dive with the watch but you can swim with it. Please be sure you do not press buttons while emersed in any water.",
+        answeredBy: "GarminProductExpert",
+        answeredDate: "1 year ago",
+        isExpertAnswer: true
+      },
+      {
+        question: "How does this watch measure stress levels exactly? Is it only determined by heart rate? Mine is telling me I'm stressed literally all the time. Not sure what the deal is. Thanks!",
+        answer: "Unfortunately, the watch is telling you the truth. We suggest taking a hot bath, putting on some candles, and perhaps a soothing spotify station. Just remember not to press any buttons while the watch is submerged.",
+        answeredBy: "buddhatime",
+        answeredDate: "10 months ago"
+      },
+      {
+        question: "Can you change the band to a different color?",
+        answer: "Yes. Absolutely. Has the quick connects that you simply squeeze like a necklace clasp to remove. I have purchased a multi-pack of extras on Amazon for around $16 and change them out according to what I'm wearing or when I eventually wear out the little band that holds the bigger band down and in place.",
+        answeredBy: "MalissaD",
+        answeredDate: "1 year ago"
+      },
+      {
+        question: "Is this watch capable of showing the UV index?",
+        answer: "Yes, The watch pulls weather info from phone. If click on weather for the more detailed info, there are 5 screens. First is current conditions, with today's high/low, % precipitation, wind. 2nd screen shows hourly conditions (next 12 hrs), 3rd screen shows 5 day forecast, 4th screen shows air quality, dew point, UV index, dew point and humidity, 5th screen shows air quality, visibility, air pressure, and cloud cover %. I use an android phone for my garmin app. I don't know how much weather info is stored on watch (when phone is not nearby)",
+        answeredBy: "AaronB",
+        answeredDate: "3 months ago",
+        isVerifiedPurchase: true
+      }
+    ]
   },
 }
 
