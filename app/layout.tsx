@@ -22,6 +22,10 @@ export default function RootLayout({
           <CartMessageHandler />
         </CartProvider>
         
+        {/* Chat Widget CSS and Container */}
+        <link rel="stylesheet" href="/chat-widget.css" />
+        <div id="chat-widget-root" />
+        
         {/* Chat Widget Script - Built Version with ProductCarousel */}
         <Script 
           src="/chat-widget.js" 
