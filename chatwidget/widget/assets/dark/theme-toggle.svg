@@ -1,0 +1,11 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Sun (for light mode) -->
+<g id="sun">
+<circle cx="10" cy="10" r="4" stroke="#374151" stroke-width="1.5"/>
+<path d="M10 1V3M10 17V19M19 10H17M3 10H1M16.364 16.364L15 15M5 5L3.636 3.636M16.364 3.636L15 5M5 15L3.636 16.364" stroke="#374151" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+<!-- Moon (for dark mode) -->
+<g id="moon" style="display: none;">
+<path d="M17 10C17 6.13401 13.866 3 10 3C9.5 3 9 3.1 8.5 3.2C9.5 4.5 10 6.2 10 8C10 11.9 7.1 15 3.2 15.5C4.2 16.5 5.6 17 7 17C10.866 17 14 13.866 14 10" stroke="#374151" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

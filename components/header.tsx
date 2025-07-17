@@ -32,7 +32,7 @@ export default function Header({ currentSection }: HeaderProps) {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
+    <header className="sticky top-0 z-40 bg-background border-b border-border shadow-sm">
       {/* Top promotional banner */}
       <div className="bg-muted py-2 text-center text-sm">
         <button className="underline hover:no-underline text-muted-foreground">Get a VERTEX Gift Card</button>

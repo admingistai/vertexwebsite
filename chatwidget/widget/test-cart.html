@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Sidebar Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .test-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #e0e7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .test-instructions {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .test-step {
+            margin: 0.5rem 0;
+            text-align: left;
+        }
+        
+        .test-step strong {
+            color: #fbbf24;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .product-demo {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 0.75rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 class="test-title">🛒 Cart Sidebar Test</h1>
+        
+        <div class="test-instructions">
+            <h2>Test Instructions:</h2>
+            <div class="test-step"><strong>1.</strong> Expand the chat widget by clicking on it</div>
+            <div class="test-step"><strong>2.</strong> Type "mens hiking shoes" or "womens hiking shoes" and press Enter</div>
+            <div class="test-step"><strong>3.</strong> Click the 🛒 cart icon on any product in the carousel</div>
+            <div class="test-step"><strong>4.</strong> The cart sidebar should slide in from the right</div>
+            <div class="test-step"><strong>5.</strong> Test quantity controls, remove items, and cart management</div>
+            <div class="test-step"><strong>6.</strong> Click outside the cart to close it</div>
+            <div class="test-step"><strong>7.</strong> Verify both widgets can be open simultaneously without overlap</div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-demo">
+                <h3>Features Tested</h3>
+                <ul style="text-align: left;">
+                    <li>Right-side slide animation</li>
+                    <li>Semi-transparent backdrop</li>
+                    <li>Add/remove items</li>
+                    <li>Quantity controls</li>
+                    <li>Subtotal calculation</li>
+                    <li>localStorage persistence</li>
+                </ul>
+            </div>
+            
+            <div class="product-demo">
+                <h3>Design Elements</h3>
+                <ul style="text-align: left;">
+                    <li>Theme support (light/dark)</li>
+                    <li>Responsive design</li>
+                    <li>Smooth animations</li>
+                    <li>Backdrop blur effects</li>
+                    <li>Proper z-index layering</li>
+                    <li>Mobile optimized</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <link rel="stylesheet" href="./dist/chat-widget.css">
+    <div id="chat-widget-root"></div>
+    <script src="./dist/chat-widget.js"></script>
+</body>
+</html>
