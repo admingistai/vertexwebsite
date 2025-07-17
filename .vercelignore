@@ -1,0 +1,11 @@
+# Exclude chat widget source files from deployment
+_chatwidget_disabled/
+
+# Log files
+*.log
+widget.log
+backend.log
+website.log
+
+# Development files
+start-all.sh 

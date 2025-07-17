@@ -212,3 +212,7 @@ Traceback (most recent call last):
   File "/Users/tjmcgovern/miniconda3/lib/python3.13/site-packages/elevenlabs/text_to_speech/client.py", line 415, in convert_as_stream
     raise ApiError(status_code=_response.status_code, body=_response_json)
 elevenlabs.core.api_error.ApiError: status_code: 401, body: {'detail': {'status': 'invalid_api_key', 'message': 'Invalid API key'}}
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [67477]
