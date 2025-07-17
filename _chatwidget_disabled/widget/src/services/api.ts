@@ -3,8 +3,8 @@
  * Handles all API calls to the ChatGPT Widget backend.
  */
 
-// Get backend URL from environment or default to localhost
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+// Get backend URL from environment or default to current domain for Next.js API routes
+const API_BASE_URL = import.meta.env.VITE_API_URL || window.location.origin;
 
 // Types
 interface ChatRequest {
