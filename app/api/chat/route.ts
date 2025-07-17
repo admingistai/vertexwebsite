@@ -61,7 +61,9 @@ function checkRateLimit(clientId: string): boolean {
 export async function POST(request: NextRequest) {
   try {
     // Rate limiting
-    const clientId = request.ip || request.headers.get('x-forwarded-for') || 'anonymous';
+    const clientId = request.headers.get('x-forwarded-for') || 
+                     request.headers.get('x-real-ip') || 
+                     'anonymous';
     if (!checkRateLimit(clientId)) {
       const errorResponse: ChatErrorResponse = {
         error: {

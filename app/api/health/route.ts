@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 // CORS headers configuration
 const corsHeaders = {
@@ -12,7 +12,7 @@ export async function OPTIONS() {
   return NextResponse.json({}, { headers: corsHeaders });
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     // Check if OpenAI API key is configured
     const apiKeyConfigured = !!process.env.OPENAI_API_KEY;
