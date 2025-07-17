@@ -28,3 +28,50 @@
  ✓ Compiled in 118ms
  GET /kids 200 in 238ms
  GET /product/4001 200 in 69ms
+ ✓ Compiled /men/shoes in 387ms
+ GET /men/shoes 200 in 421ms
+ GET /product/4001 200 in 26ms
+ ✓ Compiled /product/[id] in 10ms
+ ⨯ ReferenceError: ChatWidgetContainer is not defined
+    at RootLayout (app/layout.tsx:26:9)
+  24 |         
+  25 |         {/* Chat Widget Container */}
+> 26 |         <ChatWidgetContainer />
+     |         ^
+  27 |         
+  28 |         {/* Chat Widget Script - Built Version with ProductCarousel */}
+  29 |         <Script  {
+  digest: '4044508817'
+}
+ ⨯ ReferenceError: ChatWidgetContainer is not defined
+    at RootLayout (app/layout.tsx:26:9)
+  24 |         
+  25 |         {/* Chat Widget Container */}
+> 26 |         <ChatWidgetContainer />
+     |         ^
+  27 |         
+  28 |         {/* Chat Widget Script - Built Version with ProductCarousel */}
+  29 |         <Script  {
+  digest: '4044508817'
+}
+ ⨯ ReferenceError: ChatWidgetContainer is not defined
+    at RootLayout (app/layout.tsx:26:9)
+  24 |         
+  25 |         {/* Chat Widget Container */}
+> 26 |         <ChatWidgetContainer />
+     |         ^
+  27 |         
+  28 |         {/* Chat Widget Script - Built Version with ProductCarousel */}
+  29 |         <Script  {
+  digest: '4044508817'
+}
+ GET /product/4001 200 in 345ms
+ GET /product/4001 500 in 514ms
+ ✓ Compiled /favicon.ico in 273ms
+ GET /favicon.ico 200 in 340ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /product/[id] in 7ms
+ GET /product/4001 200 in 422ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 25ms
