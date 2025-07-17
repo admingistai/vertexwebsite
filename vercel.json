@@ -3,19 +3,5 @@
   "outputDirectory": ".next",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "functions": {
-    "app/**/*.tsx": {
-      "runtime": "nodejs20.x"
-    },
-    "app/**/*.ts": {
-      "runtime": "nodejs20.x"
-    },
-    "app/**/*.jsx": {
-      "runtime": "nodejs20.x"
-    },
-    "app/**/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "framework": "nextjs"
 }
