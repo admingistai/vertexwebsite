@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { CartProvider } from "@/components/cart-context";
 import CartMessageHandler from "@/components/cart-message-handler";
+import ClaimOfferButton from "@/components/claim-offer-button";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,6 +20,7 @@ export default function RootLayout({
         <CartProvider>
           {children}
           <CartMessageHandler />
+          <ClaimOfferButton />
         </CartProvider>
       </body>
     </html>
